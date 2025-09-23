@@ -129,12 +129,26 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    /* Allow bouncing scroll effect */
+    overscroll-behavior: auto;
+    /* Set a dark fallback background */
+    background: #001122;
+    min-height: 100vh;
+  }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     /* Set Montserrat as the default font family for the entire website */
     font-family: var(--font-montserrat);
+    /* Allow bouncing scroll effect */
+    overscroll-behavior: auto;
+    /* Ensure body extends full height */
+    min-height: 100vh;
+    /* Transparent background to show html background */
+    background: transparent;
   }
 }
+
 
 .instrument {
   font-family: var(--font-instrument-serif);

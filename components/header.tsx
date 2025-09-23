@@ -49,13 +49,10 @@ export default function Header({ activeSection = "home", setActiveSection }: Hea
             {/* Logo */}
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleNavClick("home")}>
               <img
-                src={`${process.env.NODE_ENV === 'production' ? '/vibecode2025' : ''}/angel-connect-logo.png`}
-                alt="Angel Connect Logo"
-                className="w-6 h-6 md:w-8 md:h-8 object-contain"
+                src={`${process.env.NODE_ENV === 'production' ? '/vibecode2025' : ''}/as-logo-horizontal.png`}
+                alt="Angel Steps Logo"
+                className="h-6 md:h-8 w-auto object-contain"
               />
-              <div className="text-white text-lg md:text-xl tracking-tight font-extrabold">
-                Angel Connect
-              </div>
             </div>
 
             {/* Desktop Navigation */}
@@ -121,7 +118,7 @@ export default function Header({ activeSection = "home", setActiveSection }: Hea
             />
 
             {/* Mobile Menu Content */}
-            <div className="lg:hidden absolute top-full left-0 right-0 bg-black border-t border-white/20 shadow-2xl z-[110]">
+            <div className="lg:hidden absolute top-full left-0 right-0 bg-black/20 backdrop-blur-md border-t border-white/20 shadow-2xl z-[110]">
               <div className="flex flex-col p-6 space-y-4">
                 {/* Mobile Navigation */}
                 {navItems.map((item) => (

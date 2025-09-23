@@ -3,6 +3,27 @@
 import { Zap, Brain, Rocket } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
+const CARD_CONFIG = [
+  {
+    Icon: Zap,
+    iconColor: "text-blue-300",
+    titleKey: "about.innovation_card_title",
+    textKey: "about.innovation_card_text"
+  },
+  {
+    Icon: Brain,
+    iconColor: "text-blue-400",
+    titleKey: "about.ai_card_title",
+    textKey: "about.ai_card_text"
+  },
+  {
+    Icon: Rocket,
+    iconColor: "text-blue-500",
+    titleKey: "about.result_card_title",
+    textKey: "about.result_card_text"
+  }
+]
+
 export default function AboutSection() {
   const { t } = useLanguage()
   return (
@@ -51,29 +72,18 @@ export default function AboutSection() {
           </div>
 
           <div className="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/10 text-center">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-white/20 mx-auto mb-3 md:mb-4">
-                <Zap className="w-5 h-5 md:w-6 md:h-6 text-blue-300" />
+            {CARD_CONFIG.map(({ Icon, iconColor, titleKey, textKey }) => (
+              <div
+                key={titleKey}
+                className="bg-white/5 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/10 text-center shadow-[0_12px_32px_rgba(15,23,42,0.18)]"
+              >
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-white/20 mx-auto mb-3 md:mb-4">
+                  <Icon className={`w-5 h-5 md:w-6 md:h-6 ${iconColor}`} />
+                </div>
+                <h4 className="text-white font-medium mb-2 text-sm md:text-base">{t(titleKey)}</h4>
+                <p className="text-white/70 text-xs md:text-sm leading-relaxed">{t(textKey)}</p>
               </div>
-              <h4 className="text-white font-medium mb-2 text-sm md:text-base">{t("about.innovation_card_title")}</h4>
-              <p className="text-white/70 text-xs md:text-sm">{t("about.innovation_card_text")}</p>
-            </div>
-
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/10 text-center">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-white/20 mx-auto mb-3 md:mb-4">
-                <Brain className="w-5 h-5 md:w-6 md:h-6 text-blue-400" />
-              </div>
-              <h4 className="text-white font-medium mb-2 text-sm md:text-base">{t("about.ai_card_title")}</h4>
-              <p className="text-white/70 text-xs md:text-sm">{t("about.ai_card_text")}</p>
-            </div>
-
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/10 text-center">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-white/20 mx-auto mb-3 md:mb-4">
-                <Rocket className="w-5 h-5 md:w-6 md:h-6 text-blue-500" />
-              </div>
-              <h4 className="text-white font-medium mb-2 text-sm md:text-base">{t("about.result_card_title")}</h4>
-              <p className="text-white/70 text-xs md:text-sm">{t("about.result_card_text")}</p>
-            </div>
+            ))}
           </div>
         </div>
   )

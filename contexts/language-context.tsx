@@ -27,7 +27,7 @@ const translations = {
     // Hero Content
     'hero.hackathon': 'Хакатон',
     'hero.location_year': 'Ташкент 2025',
-    'hero.subtitle': 'Первый оффлайн Vibe Coding хакатон в Центральной Азии',
+    'hero.subtitle': 'Первый Vibe Coding хакатон в Узбекистане',
     'hero.description': '2-дневный интенсивный хакатон для создания стартапов с помощью AI-инструментов',
     'hero.date': '15-16 ноября 2025',
     'hero.location': 'Ташкент, Узбекистан',
@@ -49,7 +49,7 @@ const translations = {
     'about.innovation_title': 'Инновационный формат',
     'about.innovation_text': 'Первый хакатон в регионе, полностью посвященный разработке с использованием AI-инструментов нового поколения',
     'about.community_title': 'Сильное сообщество',
-    'about.community_text': '150+ участников из лучших IT-компаний, стартапов и университетов Центральной Азии',
+    'about.community_text': '150+ участников из лучших IT-компаний, стартапов и университетов Узбекистана',
     'about.networking_title': 'Премиальный нетворкинг',
     'about.networking_text': 'Уникальная возможность познакомиться с ведущими экспертами, инвесторами и предпринимателями региона',
     'about.prizes_title': 'Серьезные призы',
@@ -193,7 +193,7 @@ const translations = {
 
     // Partners Section
     'partners.title': 'Партнеры и спонсоры',
-    'partners.subtitle': 'Присоединяйтесь к первому VibeCode хакатону в Центральной Азии и получите максимальную видимость среди инновационного сообщества региона',
+    'partners.subtitle': 'Присоединяйтесь к первому VibeCode хакатону в Узбекистане и получите максимальную видимость среди инновационного сообщества региона',
     'partners.title_sponsor': 'TITLE SPONSOR',
     'partners.title_sponsor_desc': 'Максимальная видимость и эксклюзивность',
     'partners.title_sponsor_feature1': 'Название хакатона с упоминанием компании',
@@ -260,7 +260,7 @@ const translations = {
     // Hero Content
     'hero.hackathon': 'Hackathon',
     'hero.location_year': 'Tashkent 2025',
-    'hero.subtitle': 'First offline Vibe Coding hackathon in Central Asia',
+    'hero.subtitle': 'First Vibe Coding hackathon in Uzbekistan',
     'hero.description': '2-day intensive hackathon for creating startups using AI tools',
     'hero.date': 'November 15-16, 2025',
     'hero.location': 'Tashkent, Uzbekistan',
@@ -282,7 +282,7 @@ const translations = {
     'about.innovation_title': 'Innovative Format',
     'about.innovation_text': 'First hackathon in the region entirely dedicated to development using next-generation AI tools',
     'about.community_title': 'Strong Community',
-    'about.community_text': '150+ participants from the best IT companies, startups and universities in Central Asia',
+    'about.community_text': '150+ participants from the best IT companies, startups and universities in Uzbekistan',
     'about.networking_title': 'Premium Networking',
     'about.networking_text': 'Unique opportunity to meet leading experts, investors and entrepreneurs of the region',
     'about.prizes_title': 'Serious Prizes',
@@ -426,7 +426,7 @@ const translations = {
 
     // Partners Section
     'partners.title': 'Partners and Sponsors',
-    'partners.subtitle': 'Join the first VibeCode hackathon in Central Asia and get maximum visibility among the region\'s innovation community',
+    'partners.subtitle': 'Join the first VibeCode hackathon in Uzbekistan and get maximum visibility among the region\'s innovation community',
     'partners.title_sponsor': 'TITLE SPONSOR',
     'partners.title_sponsor_desc': 'Maximum visibility and exclusivity',
     'partners.title_sponsor_feature1': 'Hackathon name with company mention',
@@ -493,7 +493,7 @@ const translations = {
     // Hero Content
     'hero.hackathon': 'Hakaton',
     'hero.location_year': 'Toshkent 2025',
-    'hero.subtitle': 'Markaziy Osiyodagi birinchi offline Vibe Coding hakaton',
+    'hero.subtitle': 'O\'zbekistondagi birinchi Vibe Coding hakaton',
     'hero.description': 'AI vositalar yordamida startaplar yaratish uchun 2 kunlik intensiv hakaton',
     'hero.date': '15-16 noyabr, 2025',
     'hero.location': 'Toshkent, O\'zbekiston',
@@ -515,7 +515,7 @@ const translations = {
     'about.innovation_title': 'Innovatsion format',
     'about.innovation_text': 'Mintaqadagi yangi avlod AI vositalaridan foydalanishga to\'liq bag\'ishlangan birinchi hakaton',
     'about.community_title': 'Kuchli hamjamiyat',
-    'about.community_text': 'Markaziy Osiyoning eng yaxshi IT kompaniyalari, startaplari va universitetlaridan 150+ ishtirokchi',
+    'about.community_text': 'O\'zbekistonning eng yaxshi IT kompaniyalari, startaplari va universitetlaridan 150+ ishtirokchi',
     'about.networking_title': 'Premium tarmoqsozlik',
     'about.networking_text': 'Mintaqaning etakchi ekspertlari, investorlari va tadbirkorlari bilan tanishishning noyob imkoniyati',
     'about.prizes_title': 'Jiddiy mukofotlar',
@@ -659,7 +659,7 @@ const translations = {
 
     // Partners Section
     'partners.title': 'Hamkorlar va homiylar',
-    'partners.subtitle': 'Markaziy Osiyodagi birinchi VibeCode hakatonga qo\'shiling va mintaqaning innovatsion hamjamiyati orasida maksimal ko\'rinishga ega bo\'ling',
+    'partners.subtitle': 'O\'zbekistondagi birinchi VibeCode hakatonga qo\'shiling va mintaqaning innovatsion hamjamiyati orasida maksimal ko\'rinishga ega bo\'ling',
     'partners.title_sponsor': 'BOSH HOMIY',
     'partners.title_sponsor_desc': 'Maksimal ko\'rinish va eksklyuzivlik',
     'partners.title_sponsor_feature1': 'Kompaniya nomi bilan hakaton nomi',

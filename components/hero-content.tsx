@@ -52,22 +52,6 @@ export default function HeroContent() {
           </button>
         </div>
 
-        {/* VibeCode Info with Liquid Glass - Both Mobile and Desktop */}
-        <div className="max-w-lg mx-auto md:mx-0">
-          <div className="relative overflow-hidden rounded-xl p-4 md:p-6 border border-white/20 bg-white/5 backdrop-blur-md">
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5"></div>
-            <div className="relative z-10">
-              <h3 className="text-white font-medium text-sm md:text-base mb-2 md:mb-3">{t("details.what_is_vibe")}</h3>
-              <p className="text-white/70 text-xs md:text-sm leading-relaxed mb-3 md:mb-4">
-                {t("details.vibe_description")}
-              </p>
-              <div className="flex items-center justify-between">
-                <div className="text-lg md:text-xl font-bold text-white">$6,000</div>
-                <div className="text-white/60 text-xs md:text-sm">Призовой фонд</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
   )
