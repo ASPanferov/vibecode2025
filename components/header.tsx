@@ -113,16 +113,16 @@ export default function Header({ activeSection = "home", setActiveSection }: Hea
         {/* Mobile Menu Overlay */}
         {isMobileMenuOpen && (
           <div
-            className="lg:hidden fixed inset-0 top-full bg-black/20 backdrop-blur-sm z-40"
+            className="lg:hidden fixed inset-0 top-full bg-black/20 backdrop-blur-sm z-[105]"
             onClick={() => setIsMobileMenuOpen(false)}
           />
         )}
 
         {/* Mobile Menu */}
-        <div className={`lg:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-black/95 via-black/90 to-black/85 backdrop-blur-xl border-t border-white/10 shadow-2xl transition-all duration-300 ease-in-out z-50 ${
+        <div className={`lg:hidden absolute top-full left-0 right-0 bg-black border-t border-white/10 shadow-2xl transition-all duration-300 ease-in-out z-[110] ${
           isMobileMenuOpen
-            ? 'opacity-100 translate-y-0 pointer-events-auto'
-            : 'opacity-0 -translate-y-4 pointer-events-none'
+            ? 'opacity-100 translate-y-0 pointer-events-auto visible'
+            : 'opacity-0 -translate-y-4 pointer-events-none invisible'
         }`}>
           <div className="flex flex-col p-6 space-y-3">
               {/* Mobile Navigation */}
