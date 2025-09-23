@@ -49,7 +49,7 @@ export default function Header({ activeSection = "home", setActiveSection }: Hea
           {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleNavClick("home")}>
             <img
-              src="/angel-connect-logo.png"
+              src={`${process.env.NODE_ENV === 'production' ? '/vibecode2025' : ''}/angel-connect-logo.png`}
               alt="Angel Connect Logo"
               className="w-6 h-6 md:w-8 md:h-8 object-contain"
             />
