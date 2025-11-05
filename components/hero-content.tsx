@@ -44,9 +44,14 @@ export default function HeroContent() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mb-6">
-          <button className="w-full sm:w-auto px-6 md:px-8 py-3 rounded-full bg-blue-500 text-white font-normal text-sm transition-all duration-200 hover:bg-blue-400 cursor-pointer">
+          <a
+            href="https://forms.gle/wQxZREJsVjt71ht79"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-6 md:px-8 py-3 rounded-full bg-blue-500 text-white font-normal text-sm transition-all duration-200 hover:bg-blue-400 cursor-pointer text-center"
+          >
             {t("hero.register")}
-          </button>
+          </a>
           <button className="w-full sm:w-auto px-6 md:px-8 py-3 rounded-full bg-transparent border border-white/30 text-white font-normal text-sm transition-all duration-200 hover:bg-white/10 hover:border-white/50 cursor-pointer">
             {t("hero.sponsor")}
           </button>
