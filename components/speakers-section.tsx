@@ -29,9 +29,9 @@ export default function SpeakersSection() {
       company: "TBA"
     },
     {
-      name: "Спикер 4",
-      nameEn: "Speaker 4",
-      nameUz: "Spiker 4",
+      name: "Сергей Шима",
+      nameEn: "Sergey Shima",
+      nameUz: "Sergey Shima",
       position: "TBA",
       company: "TBA"
     },
