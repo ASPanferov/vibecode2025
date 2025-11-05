@@ -4,15 +4,12 @@ import { useState } from "react"
 import Header from "@/components/header"
 import HeroContent from "@/components/hero-content"
 import AnimatedShaderBackground from "@/components/animated-shader-background"
-import HackathonDetails from "@/components/hackathon-details"
 import AboutSection from "@/components/about-section"
-import HackathonProgram from "@/components/hackathon-program"
-import ParticipantsSection from "@/components/participants-section"
-import EvaluationCriteria from "@/components/evaluation-criteria"
-import PrizesSection from "@/components/prizes-section"
-import PartnersSection from "@/components/partners-section"
+import ForumProgram from "@/components/forum-program"
+import SpeakersSection from "@/components/speakers-section"
+import TopicsSection from "@/components/topics-section"
 
-export default function VibeCodeHackathon() {
+export default function AIForum() {
   const [activeSection, setActiveSection] = useState("home")
 
   const renderSectionContent = () => {
@@ -26,40 +23,23 @@ export default function VibeCodeHackathon() {
       case "program":
         return (
           <section className="min-h-screen flex items-center justify-center p-4 md:p-8 pt-20 md:pt-24 relative z-0">
-            <HackathonProgram />
+            <ForumProgram />
           </section>
         )
-      case "participants":
+      case "speakers":
         return (
           <section className="min-h-screen flex items-center justify-center p-4 md:p-8 pt-20 md:pt-24 relative z-0">
-            <ParticipantsSection />
+            <SpeakersSection />
           </section>
         )
-      case "criteria":
+      case "topics":
         return (
           <section className="min-h-screen flex items-center justify-center p-4 md:p-8 pt-20 md:pt-24 relative z-0">
-            <EvaluationCriteria />
-          </section>
-        )
-      case "prizes":
-        return (
-          <section className="min-h-screen flex items-center justify-center p-4 md:p-8 pt-20 md:pt-24 relative z-0">
-            <PrizesSection />
-          </section>
-        )
-      case "partners":
-        return (
-          <section className="min-h-screen flex items-center justify-center p-4 md:p-8 pt-20 md:pt-24 relative z-0">
-            <PartnersSection />
+            <TopicsSection />
           </section>
         )
       default:
-        return (
-          <>
-            <HeroContent />
-            <HackathonDetails />
-          </>
-        )
+        return <HeroContent />
     }
   }
 

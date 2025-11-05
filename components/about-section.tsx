@@ -1,90 +1,101 @@
 "use client"
 
-import { Zap, Brain, Rocket } from "lucide-react"
+import { Users, Briefcase, Code, Target } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
-
-const CARD_CONFIG = [
-  {
-    Icon: Zap,
-    iconColor: "text-blue-300",
-    titleKey: "about.innovation_card_title",
-    textKey: "about.innovation_card_text"
-  },
-  {
-    Icon: Brain,
-    iconColor: "text-blue-400",
-    titleKey: "about.ai_card_title",
-    textKey: "about.ai_card_text"
-  },
-  {
-    Icon: Rocket,
-    iconColor: "text-blue-500",
-    titleKey: "about.result_card_title",
-    textKey: "about.result_card_text"
-  }
-]
 
 export default function AboutSection() {
   const { t } = useLanguage()
+
+  const audiences = [
+    {
+      icon: Briefcase,
+      title: t("about.entrepreneurs"),
+      description: t("about.entrepreneurs_desc"),
+      color: "text-blue-400"
+    },
+    {
+      icon: Target,
+      title: t("about.startups"),
+      description: t("about.startups_desc"),
+      color: "text-purple-400"
+    },
+    {
+      icon: Code,
+      title: t("about.it_specialists"),
+      description: t("about.it_specialists_desc"),
+      color: "text-green-400"
+    },
+    {
+      icon: Users,
+      title: t("about.managers"),
+      description: t("about.managers_desc"),
+      color: "text-orange-400"
+    }
+  ]
+
+  const benefits = [
+    t("about.benefit1"),
+    t("about.benefit2"),
+    t("about.benefit3"),
+    t("about.benefit4"),
+    t("about.benefit5"),
+    t("about.benefit6")
+  ]
+
   return (
-        <div className="max-w-4xl w-full px-4">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-4 md:mb-6">
-              {t("about.title")}
-            </h2>
-            <div className="inline-flex items-center px-3 md:px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm mb-6 md:mb-8 border border-white/20">
-              <span className="text-blue-300 text-base md:text-lg font-medium italic">
-                "{t("details.slogan")}"
-              </span>
-            </div>
-          </div>
+    <div className="max-w-5xl w-full px-4">
+      {/* Main Title */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-6">
+          {t("about.title")}
+        </h2>
+      </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-white/10 mb-6 md:mb-8">
-            <div className="flex flex-col md:flex-row items-start gap-4 mb-4 md:mb-6">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/20 shadow-lg flex-shrink-0">
-                <Brain className="w-5 h-5 md:w-6 md:h-6 text-blue-300" />
-              </div>
-              <div>
-                <h3 className="text-xl md:text-2xl font-medium text-white mb-3 md:mb-4">
-                  {t("details.what_is_vibe")}
-                </h3>
-                <p className="text-sm md:text-base text-white/80 leading-relaxed">
-                  {t("details.vibe_description")}
-                </p>
-              </div>
-            </div>
-          </div>
+      {/* Main Description */}
+      <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/10 mb-8">
+        <p className="text-base md:text-lg text-white/90 leading-relaxed mb-6">
+          {t("about.description")}
+        </p>
+        <p className="text-base md:text-lg text-white/90 leading-relaxed">
+          {t("about.mission")}
+        </p>
+      </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-white/10 mb-6 md:mb-8">
-            <div className="flex flex-col md:flex-row items-start gap-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/20 shadow-lg flex-shrink-0">
-                <Rocket className="w-5 h-5 md:w-6 md:h-6 text-blue-400" />
+      {/* Benefits */}
+      <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/10 mb-12">
+        <h3 className="text-2xl font-medium text-white mb-6">{t("about.what_you_get")}</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {benefits.map((benefit, index) => (
+            <div key={index} className="flex items-start gap-3">
+              <div className="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span className="text-blue-400 text-sm">✓</span>
               </div>
-              <div>
-                <h3 className="text-xl md:text-2xl font-medium text-white mb-3 md:mb-4">
-                  {t("details.mission")}
-                </h3>
-                <p className="text-sm md:text-base text-white/80 leading-relaxed">
-                  {t("details.mission_text")}
-                </p>
-              </div>
+              <p className="text-white/80 text-sm md:text-base">{benefit}</p>
             </div>
-          </div>
-
-          <div className="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-            {CARD_CONFIG.map(({ Icon, iconColor, titleKey, textKey }) => (
-              <div
-                key={titleKey}
-                className="bg-white/5 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/10 text-center shadow-[0_12px_32px_rgba(15,23,42,0.18)]"
-              >
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-white/20 mx-auto mb-3 md:mb-4">
-                  <Icon className={`w-5 h-5 md:w-6 md:h-6 ${iconColor}`} />
-                </div>
-                <h4 className="text-white font-medium mb-2 text-sm md:text-base">{t(titleKey)}</h4>
-                <p className="text-white/70 text-xs md:text-sm leading-relaxed">{t(textKey)}</p>
-              </div>
-            ))}
-          </div>
+          ))}
         </div>
+      </div>
+
+      {/* For Who Section */}
+      <div className="mb-8">
+        <h3 className="text-2xl md:text-3xl font-light text-white mb-8 text-center">
+          {t("about.for_who")}
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {audiences.map((audience, index) => (
+            <div
+              key={index}
+              className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300"
+            >
+              <div className={`w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center mb-4`}>
+                <audience.icon className={`w-6 h-6 ${audience.color}`} />
+              </div>
+              <h4 className="text-lg font-medium text-white mb-3">{audience.title}</h4>
+              <p className="text-white/70 text-sm leading-relaxed">{audience.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   )
 }

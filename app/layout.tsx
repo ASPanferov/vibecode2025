@@ -22,9 +22,9 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "VibeCode Хакатон Ташкент 2025 | AngelConnect",
+  title: "AngelConnect AI Forum 2025 | Ташкент",
   description:
-    "Первый оффлайн Vibe Coding хакатон в Центральной Азии. 15-16 ноября 2025, School21 Ташкент. Призовой фонд $6,000.",
+    "Первый практический форум для предпринимателей, стартаперов и IT-специалистов о реальном применении AI в бизнес-процессах. 29-30 ноября 2025, Ташкент.",
 }
 
 export default function RootLayout({

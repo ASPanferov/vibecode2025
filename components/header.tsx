@@ -28,10 +28,8 @@ export default function Header({ activeSection = "home", setActiveSection }: Hea
     { id: "home", label: t("nav.home") },
     { id: "about", label: t("nav.about") },
     { id: "program", label: t("nav.program") },
-    { id: "participants", label: t("nav.participants") },
-    { id: "criteria", label: t("nav.criteria") },
-    { id: "prizes", label: t("nav.prizes") },
-    { id: "partners", label: t("nav.partners") }
+    { id: "speakers", label: t("nav.speakers") },
+    { id: "topics", label: t("nav.topics") }
   ]
 
   const languages = [

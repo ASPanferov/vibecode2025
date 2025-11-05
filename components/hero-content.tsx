@@ -15,9 +15,9 @@ export default function HeroContent() {
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-16 tracking-tight font-light text-white mb-4">
-          <span className="font-medium italic instrument text-blue-400">VibeCode</span> {t("hero.hackathon")}
+          <span className="font-medium italic instrument text-blue-400">AngelConnect</span>
           <br />
-          <span className="font-light tracking-tight text-white">{t("hero.location_year")}</span>
+          <span className="font-light tracking-tight text-white">AI Forum 2025</span>
         </h1>
 
         <p className="text-sm md:text-base font-light text-white/70 mb-6 leading-relaxed max-w-lg mx-auto md:mx-0">
@@ -30,6 +30,10 @@ export default function HeroContent() {
             <span>{t("hero.date")}</span>
           </div>
           <div className="flex items-center justify-center md:justify-start gap-2 text-white/80">
+            <span className="text-blue-400">⏰</span>
+            <span>{t("hero.time")}</span>
+          </div>
+          <div className="flex items-center justify-center md:justify-start gap-2 text-white/80">
             <span className="text-blue-400">📍</span>
             <span>{t("hero.location")}</span>
           </div>
@@ -37,18 +41,14 @@ export default function HeroContent() {
             <span className="text-blue-400">👥</span>
             <span>{t("hero.participants")}</span>
           </div>
-          <div className="flex items-center justify-center md:justify-start gap-2 text-white/80">
-            <span className="text-blue-400">💰</span>
-            <span>{t("hero.prize")}</span>
-          </div>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mb-6">
-          <button className="w-full sm:w-auto px-6 md:px-8 py-3 rounded-full bg-transparent border border-white/30 text-white font-normal text-sm transition-all duration-200 hover:bg-white/10 hover:border-white/50 cursor-pointer">
-            {t("hero.learn_more")}
-          </button>
           <button className="w-full sm:w-auto px-6 md:px-8 py-3 rounded-full bg-blue-500 text-white font-normal text-sm transition-all duration-200 hover:bg-blue-400 cursor-pointer">
             {t("hero.register")}
+          </button>
+          <button className="w-full sm:w-auto px-6 md:px-8 py-3 rounded-full bg-transparent border border-white/30 text-white font-normal text-sm transition-all duration-200 hover:bg-white/10 hover:border-white/50 cursor-pointer">
+            {t("hero.sponsor")}
           </button>
         </div>
 

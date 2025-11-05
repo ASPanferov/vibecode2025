@@ -9,10 +9,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'export',
-  trailingSlash: true,
-  basePath: '/vibecode2025',
-  assetPrefix: '/vibecode2025',
+  // output: 'export', // Commented out for dev mode
+  // trailingSlash: true,
+  // basePath: '/vibecode2025', // Commented out for dev mode
+  // assetPrefix: '/vibecode2025', // Commented out for dev mode
 }
 
 export default nextConfig
