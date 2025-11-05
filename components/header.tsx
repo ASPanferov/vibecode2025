@@ -91,9 +91,14 @@ export default function Header({ activeSection = "home", setActiveSection }: Hea
               </div>
 
               {/* Registration Button */}
-              <button className="px-6 py-2 rounded-full bg-blue-500 text-white font-normal text-xs transition-all duration-300 hover:bg-blue-400 cursor-pointer h-8 flex items-center">
+              <a
+                href="https://forms.gle/wQxZREJsVjt71ht79"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2 rounded-full bg-blue-500 text-white font-normal text-xs transition-all duration-300 hover:bg-blue-400 cursor-pointer h-8 flex items-center"
+              >
                 {t("header.participate")}
-              </button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -154,9 +159,14 @@ export default function Header({ activeSection = "home", setActiveSection }: Hea
                 </div>
 
                 {/* Mobile Registration Button */}
-                <button className="w-full mt-4 px-6 py-4 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium transition-all duration-300 hover:from-blue-400 hover:to-blue-500 shadow-lg hover:shadow-xl transform hover:scale-[1.02]">
+                <a
+                  href="https://forms.gle/wQxZREJsVjt71ht79"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full mt-4 px-6 py-4 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium transition-all duration-300 hover:from-blue-400 hover:to-blue-500 shadow-lg hover:shadow-xl transform hover:scale-[1.02] text-center"
+                >
                   {t("header.participate")}
-                </button>
+                </a>
               </div>
             </div>
           </>

@@ -33,7 +33,7 @@ const translations = {
     'hero.location': 'Ташкент, Узбекистан',
     'hero.speakers': '5 экспертов-практиков',
     'hero.participants': '200 участников',
-    'hero.register': 'Регистрация через Telegram',
+    'hero.register': 'Регистрация',
     'hero.learn_more': 'Узнать больше',
     'hero.sponsor': 'Стать спонсором',
 
@@ -146,7 +146,7 @@ const translations = {
     'hero.location': 'Tashkent, Uzbekistan',
     'hero.speakers': '5 Expert Practitioners',
     'hero.participants': '200 Participants',
-    'hero.register': 'Register via Telegram',
+    'hero.register': 'Register',
     'hero.learn_more': 'Learn More',
     'hero.sponsor': 'Become a Sponsor',
 
@@ -259,7 +259,7 @@ const translations = {
     'hero.location': 'Toshkent, O\'zbekiston',
     'hero.speakers': '5 ekspert-amaliyotchi',
     'hero.participants': '200 ishtirokchi',
-    'hero.register': 'Telegram orqali ro\'yxatdan o\'tish',
+    'hero.register': 'Ro\'yxatdan o\'tish',
     'hero.learn_more': 'Batafsil',
     'hero.sponsor': 'Homiy bo\'lish',
 
