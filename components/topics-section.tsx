@@ -1,22 +1,33 @@
 "use client"
 
 import { useLanguage } from "@/contexts/language-context"
-import { Bot, Wrench, Target, TrendingUp } from "lucide-react"
+import { TrendingUp, Users, Wrench, Briefcase } from "lucide-react"
 
 export default function TopicsSection() {
   const { t } = useLanguage()
 
   const topics = [
     {
-      icon: Bot,
-      title: t("topics.automation"),
+      icon: TrendingUp,
+      title: t("topics.investments"),
       items: [
-        t("topics.automation_1"),
-        t("topics.automation_2"),
-        t("topics.automation_3")
+        t("topics.investments_1"),
+        t("topics.investments_2"),
+        t("topics.investments_3")
       ],
-      color: "text-blue-400",
-      bgColor: "bg-blue-500/10"
+      color: "text-emerald-400",
+      bgColor: "bg-emerald-500/10"
+    },
+    {
+      icon: Users,
+      title: t("topics.humanai"),
+      items: [
+        t("topics.humanai_1"),
+        t("topics.humanai_2"),
+        t("topics.humanai_3")
+      ],
+      color: "text-rose-400",
+      bgColor: "bg-rose-500/10"
     },
     {
       icon: Wrench,
@@ -26,30 +37,19 @@ export default function TopicsSection() {
         t("topics.tools_2"),
         t("topics.tools_3")
       ],
-      color: "text-purple-400",
-      bgColor: "bg-purple-500/10"
+      color: "text-blue-400",
+      bgColor: "bg-blue-500/10"
     },
     {
-      icon: Target,
-      title: t("topics.cases"),
-      items: [
-        t("topics.cases_1"),
-        t("topics.cases_2"),
-        t("topics.cases_3")
-      ],
-      color: "text-green-400",
-      bgColor: "bg-green-500/10"
-    },
-    {
-      icon: TrendingUp,
+      icon: Briefcase,
       title: t("topics.future"),
       items: [
         t("topics.future_1"),
         t("topics.future_2"),
         t("topics.future_3")
       ],
-      color: "text-orange-400",
-      bgColor: "bg-orange-500/10"
+      color: "text-amber-400",
+      bgColor: "bg-amber-500/10"
     }
   ]
 

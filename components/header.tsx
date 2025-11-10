@@ -18,6 +18,15 @@ export default function Header({ activeSection = "home", setActiveSection }: Hea
       setActiveSection(section)
     }
     setIsMobileMenuOpen(false)
+
+    // Плавная прокрутка к секции
+    const element = document.getElementById(section)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
   }
 
   const handleLanguageChange = (lang: Language) => {
